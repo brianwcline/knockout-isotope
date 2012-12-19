@@ -1,0 +1,111 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>Concentric Cloud Solutions Webchat</title>    
+    
+<link href="css/webchat.css?v=4.6.0.214" type="text/css" rel="stylesheet" />
+    
+<link href="../css/jqueryui/redmond/jquery-ui-1.8.11.custom.css?v=4.6.0.214" type="text/css" rel="stylesheet" />
+    <!--- Load the core Cometd library, and the jQuery binding --->
+    
+<script type="text/javascript" src="../js/jquery-latest.min.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="../js/jquery-ui-1.8.11.custom.min.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="../js/webchat/lib/jquery.json-2.2.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="../js/webchat/lib/cometd.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="../js/webchat/lib/jquery.cometd.js?v=4.6.0.214"></script>
+	<!-- Load our chat JS file --> 
+    
+<script type="text/javascript" src="../js/webchat/lib/chat.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="../js/webchat/dsquirt_lib.js?v=4.6.0.214"></script>
+    
+<script type="text/javascript" src="js/WebChatClient.js?v=4.6.0.214"></script>
+  
+  </head>	
+      <body>
+
+        <div id="container">
+            <div id="header">                           
+                <a id="clientLogo_hlClientLogo" disabled="disabled" target="_blank"></a><h1>Concentric Cloud Solutions Multichannel</h1>
+            </div>
+
+            
+
+            <div id="chatStartPanel">
+                <form name="chatStartForm" method="post" action="default.aspx" id="chatStartForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzA4MzUwMDE5D2QWBAILDxYCHgRUZXh0BSdDb25jZW50cmljIENsb3VkIFNvbHV0aW9ucyBNdWx0aWNoYW5uZWxkAg0PFgIeB1Zpc2libGVnFgICAQ9kFgYCDQ8WAh8AZWQCFQ8PFgIeFFZhbGlkYXRpb25FeHByZXNzaW9uBTBcdysoWy0rJy5fJSZdK1x3KikqQFx3KyhbLS5dXHcrKSpcLlx3KyhbLS5dXHcrKSpkZAIfDxAPFgYeDURhdGFUZXh0RmllbGQFCUl0ZW1WYWx1ZR4ORGF0YVZhbHVlRmllbGQFCUl0ZW1WYWx1ZR4LXyFEYXRhQm91bmRnZBAVAwhGZWVkYmFjaw9PcmRlciBTb21ldGhpbmcLVGVzdFN1YmplY3QVAwhGZWVkYmFjaw9PcmRlciBTb21ldGhpbmcLVGVzdFN1YmplY3QUKwMDZ2dnZGRkT0Ejev8HU2Mo1rhE+aCJM5EaHp+AV0uojMKVC7ZTu9Y=" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDQKBh5CiBALThYvpCALpiJyQBgKV37GkDgLd35tYAu+xptcPArfD19YDAtSdy/sMAq+m6rYIAo2L6KkHAr6KvFcCvZrDsAwCh76AlQKWpukGt31D+Mo+LjO6KBSTGvbcPfSODmiTgR9Sq4WgZw==" />
+                    <input type="hidden" name="hdnWebChatHandlerUrl" id="hdnWebChatHandlerUrl" value="https://xoi.mc.hostedcc.com/WebChatServer/WebChatHandler.ashx" />
+                    <input type="hidden" name="hdnConfirmQuitMessage" id="hdnConfirmQuitMessage" value="Are you sure you would like to close this chat?" />
+                    <input type="hidden" name="hdnWebChatClosedMessage" id="hdnWebChatClosedMessage" value="Thanks for chatting ... come back soon!" />
+                    <input type="hidden" name="hdnNavigateToURLMessage" id="hdnNavigateToURLMessage" value="CCS agent has sent you a link. Would you like to open the link?" />
+                    <input type="hidden" name="hdnTrackingSessionUID" id="hdnTrackingSessionUID" />
+                    <input type="hidden" name="hdnTrackingSessionOfferID" id="hdnTrackingSessionOfferID" />
+                                
+                    <fieldset>
+                        <legend></legend>
+                        <ol>   
+                        <li>
+                            <label>Email Address:</label>
+                            <input name="useremail" type="text" id="useremail" class="text" />
+                            &nbsp;
+                            &nbsp;    
+                        </li>                        
+                        <li>
+                            <label>Name:</label>
+                            <input name="username" type="text" id="username" class="text" />
+                            &nbsp;               
+                        </li>                            
+                        <li>
+                            <label>Subject:</label>
+                            <select name="ddlSubject" id="ddlSubject" class="select">
+	<option value="Feedback">Feedback</option>
+	<option value="Order Something">Order Something</option>
+	<option value="TestSubject">TestSubject</option>
+
+</select>
+                        </li>
+                        <li>
+                            <label>Question:</label>
+                            <input name="userquestion" type="text" id="userquestion" class="text" />
+                            &nbsp;
+                        </li>                    
+                        </ol>           
+                    </fieldset>
+                    
+                    <div id="chatStartAction">
+                        <input id="btnStartChat" name="btnStartChat" value="Start Chat" type="submit"/>                
+                    </div>
+                </form>
+            </div>
+            
+            <div id="chatEditorPanel" style="display:none;">
+                <form id="chatEditorForm" action="">                
+                    <div id="chatMessageOutput"></div>
+                    <textarea id="chatMessageInput" rows="" cols=""></textarea>
+                    <div id="chatEditorActions"> 
+                        <input id="btnSend" class="chatEditorAction" value="Send" type="submit" />
+                        <input id="btnQuit" class="chatEditorAction" value="Quit" type="button" /> 
+                    </div>                
+                </form>
+            </div>
+
+            <div id="footer">
+	            <p><!--Footer--></p>		        	
+            </div>          
+        </div>
+
+        <div id="dialog-confirm">
+	        <p><span id="pushUrlMessage" style="display:none"></span></p>
+        </div>
+      </body>
+</html>
+

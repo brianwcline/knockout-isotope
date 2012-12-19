@@ -1,0 +1,190 @@
+*
+{
+	font-family:arial,helvetica,sans-serif;
+}
+
+body
+{
+	font-size: 75%;
+}
+
+h1
+{
+    padding-bottom: 0px;
+    margin-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    color: #000000;
+    font-size: 180%;
+    font-weight: bold;    
+}
+
+h2
+{
+	display: none;
+}
+
+fieldset 
+{
+  margin-bottom: 10px;
+}
+
+fieldset ol 
+{
+  margin: 0;
+  padding: 0;
+}
+
+fieldset li 
+{
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+label 
+{
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+  width: 100px;
+}
+
+label em 
+{
+    padding-left: 5px;
+    color: red;
+}
+
+#container
+{
+    border: 1px solid #cccccc;
+	background-color : #f6f6f6;
+	margin: 12px; 
+	padding: 0px 12px 12px 12px;
+}
+
+#header
+{
+    margin-bottom: 20px;    
+}
+
+#header a
+{    
+   float: left;
+}
+
+#footer
+{
+    margin-bottom: 20px;
+}
+
+#chatRuleMessage
+{
+    font-weight: bold;   
+    font-size: 12pt;
+    clear: left;
+}
+
+/* Chat Messages */
+.chatUserName
+{
+	color: #002682;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.chatMessage { color: green; }
+.agentMessage {color: blue;}
+.chatInfo {color: #777;}
+
+/* Chat Start */
+
+#chatStartAction
+{
+    width: 100%;
+    text-align: center;    
+}
+
+#btnStartChat
+{
+    border-bottom: #c8d8c8 2px solid;
+    border-left: #c8d8c8 2px solid;
+    background-color: #f6f6f6;
+    color: #cc0000;
+    border-top: #c8d8c8 2px solid; 
+    font-weight: bold; 
+    border-right: #c8d8c8 2px solid;     
+}
+
+
+#chatStartPanel 
+{
+    border-bottom: #cccccc 1px solid;
+    border-left: #cccccc 1px solid;
+    padding-bottom: 10px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #cccccc 1px solid;
+    border-right: #cccccc 1px solid;
+    padding-top: 10px
+}
+
+#chatStartPanel fieldset input 
+{
+   width: 85%;
+}
+
+#chatStartPanel legend 
+{
+  display: none;
+}
+
+#chatStartPanel fieldset 
+{
+  border: none;
+}
+
+/* Chat Editor */
+#chatEditorPanel input 
+{     
+    color: #cc0000;
+	background-color: #f6f6f6;
+	font-weight: bold;	
+	border: 2px solid #C8D8C8;	 
+}
+
+#chatMessageOutput 
+{
+    background-color : white;
+	height: 100%;
+	overflow: scroll;
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	clear: left;
+	word-wrap: break-word;
+}	
+	
+#chatMessageInput 
+{
+    height: 40px; 
+    width:100%; 
+    overflow: scroll; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    overflow:-moz-scrollbars-vertical;
+    margin-bottom: 20px;        
+}
+
+#chatEditorActions
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
